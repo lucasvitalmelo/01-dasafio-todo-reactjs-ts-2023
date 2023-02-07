@@ -1,0 +1,101 @@
+.container {
+  max-width: 46rem;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task {
+    width: 46rem;
+    min-height: 4.5rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+
+    border-radius: 0.5rem;
+
+    div {
+      display: flex;
+      gap: 0.75rem;
+
+      p {
+        width: fit-content;
+        font-size: 0.875rem;
+        font-weight: 400;
+
+        line-height: 20px;
+
+        color: var(--gray-100);
+      }
+    }
+
+    .taskCompleted {
+      text-decoration: line-through;
+      color: var(--gray-300) 
+    }
+
+    .buttonNoCheck {
+      width: 1.3rem;
+      height: 1.3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: transparent;
+      border: 2px solid var(--blue-200);
+
+      border-radius: 20px;
+      color: var(--white);
+
+      cursor: pointer;
+
+      transition: 0.1s;
+    }
+    .buttonCheck {
+      width: 1.3rem;
+      height: 1.3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+
+      background-color: var(--purple-300);
+      border: 2px solid var(--purple-300);
+
+      border-radius: 20px;
+      color: var(--white);
+
+      cursor: pointer;
+
+      transition: 0.1s;
+    }
+
+    .buttonCheck:hover {
+      opacity: 70%;
+    }
+
+    .buttonTrash {
+      background-color: transparent;
+      border: none;
+
+      color: var(--gray-300);
+
+      transition: 0.2s;
+    }
+
+    .buttonTrash:hover {
+      color: var(--red-600);
+
+    }
+  }
+
+}
